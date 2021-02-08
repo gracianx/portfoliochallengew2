@@ -30,10 +30,9 @@ body {
 /* Header Style */
 .header nav ul {
     padding-top: 0px;
-    float: right ;
     text-align: center;
     background-color:#202020;
-    display: inline-block;
+    float:right;
 }
 .header nav li {
     list-style-type: none;
@@ -98,7 +97,6 @@ body {
     flex-wrap: wrap;
     width:100%;
     justify-content: space-between;
-    border: 2px solid #707070; 
 }
 /* flex child */
 .recent {
@@ -109,10 +107,13 @@ body {
     background-image: url("https://via.placeholder.com/1920x1080.png/202020/?text=Really+Cool+Project");
     background-size: cover;
     background-position: center;
+    display:flex;
+    flex-direction: row;
+    border-radius: 14px;
 }
 
 .recent a {
-/* pushes element to bottom of flex item */
+/* Link and Title Within Flex Item */
         margin-top: auto;
         width: 20%;
         color: #ffdf6c;
@@ -122,6 +123,77 @@ body {
         text-decoration: none;
         display: inline-block;
 
-      }
-    
+}
+
+.otherone {
+    margin-bottom: 2px;
+    width: 49%;
+    min-height: 250px;
+    margin-left: 5px;
+    /*Background image*/
+    background-image: url("https://via.placeholder.com/300.png/ffdf6c/?text=Other+Really+Cool+Project");
+    background-size: cover;
+    background-position: center;
+    /*other flex properties*/
+    display:flex;
+    flex-direction: row;
+    border-radius: 14px;
+
+}
+
+.otherone a {
+    margin-top: auto;
+    width: 20%;
+    color: #707070;
+    padding: 10px 5px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.othertwo {
+    margin-bottom: 2px;
+    width: 49%;
+    min-height: 250px;
+    margin-right: 5px;
+    /*Background image*/
+    background-image: url("https://via.placeholder.com/300.png/ffdf6c/?text=Other+Really+Cool+Project");
+    background-size: cover;
+    background-position: center;
+    /*other flex properties*/
+    display:flex;
+    flex-direction: row;
+    border-radius: 14px;
+
+}
+
+.othertwo a {
+    margin-top: auto;
+    width: 20%;
+    color: #707070;
+    padding: 10px 5px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+}
+/* Contact Link Styles*/
+.contact ul {
+    padding-top: 0px;
+    text-align: center;
+    background-color:#202020;
+}
+
+.contact a {
+    margin-top: auto;
+    width: 20%;
+    color: #ffdf6c;
+    padding: 10px 5px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+        
+}
+
 
