@@ -69,8 +69,8 @@ body {
     background-position: center;
 }
 /*Main content section -- About me from right to left.*/
-.container {
-    margin-bottom: 15px;
+.about {
+    margin-bottom: 0;
     margin-top: 0;
     padding: 0;
     height: 250 px;
@@ -80,7 +80,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-.container > .image {
+.about > .image {
     flex: 1;
 }
 .image > img {
@@ -88,6 +88,40 @@ body {
     height: auto;
     width: 100%;
 }
-.container > .text {
+.about > .text {
     flex: 3;
 }
+/*Display of work section / work section*/
+/* flex parent*/
+.work {
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-between;
+    border: 2px solid #707070; 
+}
+/* flex child */
+.recent {
+    margin-bottom: 2px;
+    width: 100%;
+    height: 500px;
+    /*Background image*/
+    background-image: url("https://via.placeholder.com/1920x1080.png/202020/?text=Really+Cool+Project");
+    background-size: cover;
+    background-position: center;
+}
+
+.recent a {
+/* pushes element to bottom of flex item */
+        margin-top: auto;
+        width: 20%;
+        color: #ffdf6c;
+        padding: 10px 5px;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        display: inline-block;
+
+      }
+    
+
